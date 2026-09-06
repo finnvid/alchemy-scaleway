@@ -2,6 +2,12 @@
 
 This package uses a flat Alchemy v2 provider structure with direct Scaleway API integrations.
 
+## Compatibility And Toolchain
+
+The compatibility target is `alchemy@2.0.0-beta.76`, with an Effect peer range of `>=4.0.0-rc.112 || >=4.0.0`. Development pins `effect` and all three `@effect/platform-*` packages to `4.0.0-rc.112`.
+
+Development uses Bun `1.4.2`, TypeScript `7.0.2`, and oxfmt `0.66.0`. The Bun version is declared in `package.json#packageManager` and read by both CI and release workflows. Tooling versions are explicit, and `bun.lock` records the resolved dependency graph.
+
 ## File Layout
 
 ```text

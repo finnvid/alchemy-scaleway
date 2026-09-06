@@ -4,10 +4,12 @@ Thanks for helping improve `@bjorntech/alchemy-scaleway`.
 
 ## Development
 
-Use Bun for local development:
+Use Bun `1.4.2` for local development, as declared in `package.json#packageManager`. CI and release workflows use that same version. TypeScript and oxfmt are pinned in `devDependencies`.
+
+Install the locked dependencies:
 
 ```sh
-bun install
+bun install --frozen-lockfile
 ```
 
 Before opening a pull request, run:
