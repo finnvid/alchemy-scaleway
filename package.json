@@ -1,6 +1,6 @@
 {
   "name": "@bjorntech/alchemy-scaleway",
-  "version": "0.7.19-beta.74",
+  "version": "0.7.20-beta.76",
   "description": "Scaleway providers for Alchemy v2",
   "keywords": [
     "alchemy",
@@ -27,9 +27,6 @@
     "LICENSE",
     "CHANGELOG.md"
   ],
-  "publishConfig": {
-    "access": "public"
-  },
   "type": "module",
   "sideEffects": false,
   "exports": {
@@ -37,6 +34,9 @@
       "types": "./src/index.ts",
       "import": "./src/index.ts"
     }
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "scripts": {
     "check": "tsc --noEmit",
@@ -59,15 +59,16 @@
     "@effect/platform-bun": "4.0.0-rc.112",
     "@effect/platform-node": "4.0.0-rc.112",
     "@effect/platform-node-shared": "4.0.0-rc.112",
-    "@types/bun": "latest",
-    "@types/ssh2": "^1.15.5",
-    "alchemy": "2.0.0-beta.74",
+    "@types/bun": "1.4.1",
+    "@types/ssh2": "^1.15.6",
+    "alchemy": "2.0.0-beta.76",
     "effect": "4.0.0-rc.112",
-    "oxfmt": "latest",
-    "typescript": "latest"
+    "oxfmt": "0.66.0",
+    "typescript": "7.0.2"
   },
   "peerDependencies": {
-    "alchemy": "2.0.0-beta.74",
-    "effect": ">=4.0.0-rc.110 || >=4.0.0"
-  }
+    "alchemy": "2.0.0-beta.76",
+    "effect": ">=4.0.0-rc.112 || >=4.0.0"
+  },
+  "packageManager": "bun@1.4.2"
 }

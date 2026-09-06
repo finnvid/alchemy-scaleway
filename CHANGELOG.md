@@ -4,6 +4,14 @@ All notable changes to `@bjorntech/alchemy-scaleway` are documented here. The pa
 
 ## Unreleased
 
+## [0.7.20-beta.76] - 2026-09-06
+
+### Changed
+
+- Updated compatibility target to `alchemy@2.0.0-beta.76` and raised the Effect peer minimum to `>=4.0.0-rc.112`, matching Alchemy's requirement. Development pins remain on Effect rc.112 and matching `@effect/platform-*` packages.
+- Updated development tooling to TypeScript `7.0.2`, oxfmt `0.66.0`, `@types/bun` `1.4.1`, and `@types/ssh2` `1.15.6`; replaced floating `latest` development dependencies with explicit versions.
+- Pinned Bun to `1.4.2` in `package.json#packageManager` and aligned CI and release workflows with that version.
+
 ## [0.7.19-beta.74] - 2026-08-27
 
 ### Changed

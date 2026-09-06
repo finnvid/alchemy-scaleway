@@ -14,6 +14,7 @@ Resources are designed around useful deployment workflows rather than raw Scalew
 
 | `@bjorntech/alchemy-scaleway` | `alchemy` (peer) | `effect` (peer) | Notes         |
 | --------------------------- | ---------------- | --------------- | ------------- |
+| `0.7.20-beta.76`            | `2.0.0-beta.76`  | `>=4.0.0-rc.112 \|\| >=4.0.0` | Updates compatibility to Alchemy beta.76 and raises the Effect peer minimum to rc.112, matching the pinned `effect` and `@effect/platform-*` development versions. |
 | `0.7.19-beta.74`            | `2.0.0-beta.74`  | `>=4.0.0-rc.110 \|\| >=4.0.0` | Updates compatibility to Alchemy beta.74 and Effect rc.112; development pins move to the rc.112 `effect` and `@effect/platform-*` line. |
 | `0.7.18-beta.72`            | `2.0.0-beta.72`  | `>=4.0.0-beta.100 \|\| >=4.0.0` | Fixes `ContainerImageMirror({ allPlatforms: false })` digest selection for multi-arch sources by defaulting to `linux/amd64`, so repeat plans go noop after a successful mirror. |
 | `0.7.16-beta.72`            | `2.0.0-beta.72`  | `>=4.0.0-beta.100 \|\| >=4.0.0` | Updates compatibility to Alchemy beta.72 and Effect beta.107; `ScalewayError` now uses the beta.107 `Schema.TaggedError` pattern. |
@@ -56,7 +57,7 @@ Resources are designed around useful deployment workflows rather than raw Scalew
 ## Install
 
 ```sh
-bun add alchemy@2.0.0-beta.74 effect@4.0.0-rc.112 @bjorntech/alchemy-scaleway
+bun add alchemy@2.0.0-beta.76 effect@4.0.0-rc.112 @bjorntech/alchemy-scaleway
 ```
 
 `@bjorntech/alchemy-scaleway` ships raw TypeScript and uses `.ts` import suffixes internally. Your `tsconfig.json` needs `"moduleResolution": "Bundler"` and `"allowImportingTsExtensions": true`.
